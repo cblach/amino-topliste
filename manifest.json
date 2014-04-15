@@ -1,0 +1,17 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "amino.png",
+      "default_popup": "popup.html",
+      "default_title": "Amino"
+   },
+   "description": "Displays recent stories from Hacker News",
+   
+   "manifest_version": 2,
+   "name": "Amino Newsfeed",
+   "permissions": [ "tabs", "http://www.amino.dk/*", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1"
+}
