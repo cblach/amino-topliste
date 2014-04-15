@@ -7,7 +7,7 @@
       "default_popup": "popup.html",
       "default_title": "Amino"
    },
-   "description": "Displays recent stories from Hacker News",
+   "description": "Viser de mest aktive emner fra amino.dk",
    
    "manifest_version": 2,
    "name": "Amino Newsfeed",
