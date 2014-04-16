@@ -1,4 +1,5 @@
 body {
+	background: linear-gradient(#fff, #EBEBEB 1%, #EBEBEB);	
 	font-family: verdana,helvetica, arial, sans-serif;
 	font-weight: 400;
 	font-size: 12px;
@@ -43,14 +44,22 @@ body, div, p {
 
 .box {	
 	min-height: 150px;
-	background-color:#EBEBEB;
-	background: #EBEBEB url(ajax-loader.gif) no-repeat center center;
+	background: #FDFDFD url(ajax-loader.gif) no-repeat center center;
 	width:360px;
 	margin: 0 5px 0;
-	padding: 3px 0 4px;
+	padding: 3px 0 3px;
 	border: 1px solid #ccc;
 	border-top: 0;
 }
+
+table tr {
+	background: #fdfdfd;
+	border-bottom: 1px solid #e4e4e4;
+	border-top: 1px solid #fafafa
+	
+}
+
+
 
 .footer {
 	color: #aaa;

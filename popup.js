@@ -43,7 +43,7 @@ function UpdateFeed() {
 			var row = feed.insertRow(-1);
 			var a = document.createElement("a");
 			row.appendChild(a);
-			a.innerHTML = ""+ i + ": " + e.innerHTML;
+			a.innerHTML = e.innerHTML;
 			a.href = "http://www.amino.dk/forums/" + e.getAttribute('href', 2);
 			a.addEventListener("click", openLink);
 		}
