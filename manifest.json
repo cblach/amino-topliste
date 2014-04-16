@@ -3,10 +3,14 @@
       "page": "background.html"
    },
    "browser_action": {
-      "default_icon": "amino.png",
-      "default_popup": "popup.html",
-      "default_title": "Amino"
+	   "default_icon": "amino-19.png",
+	   "default_popup": "popup.html",
+	   "default_title": "Amino"
    },
+   
+   "icons": { "48": "amino-48.png" },
+
+   
    "description": "Viser de mest aktive emner fra amino.dk",
    
    "manifest_version": 2,

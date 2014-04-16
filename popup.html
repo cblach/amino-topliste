@@ -2,28 +2,43 @@
 <html>
 <head>
 	<script src="jquery.js"></script>
-<script src="popup.js"></script>
+	<script src="popup.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
 	<div id="spinner" style="display:none">
 		<img src="ajax-loader.gif">
 	</div>
+	
 	<div id="container" class="popup-container">
-		<div id="header">
-			<img src="icon18.png">
-			<a id="title" href="http://news.ycombinator.com">Amino</a>
-			<span>|</span>
-			<a id="submitLink" href="">Submit Current Page</a>
+		
+		<div class="header">
+			<a href="http://amino.dk">
+				<img src="amino-48.png" />
+			</a>
+			<span>Toplisten på Amino</span>
+			<select style="float:right; font-size:12px; margin-top:4px">
+				<option value="24h">sidste 24 timer</option>
+				<option value="7d">sidste uge</option>
+				<option value="1m">sidste måned</option>
+			</select>
 		</div>
+		
 		<div id="search">
-      <input type="text" id="searchbox" name="searchbox" placeholder="search hacker news..." />
-      <input type="submit" id="searchbutton" value="search" />
+			<input type="text" id="searchbox" name="searchbox" placeholder="Søg på amino..." />
+			<input type="submit" id="searchbutton" value="search" />
 		</div>
+		
 		<table id="feed" cellspacing="3" cellpadding="0">
 		</table>
+		
 		<div id="footer">
 			<div class="right">
-				<a href="http://github.com/adamalbrecht/hacker-news-for-chrome/issues" id="issues">Issues?</a> | <a href="" id="refresh">Refresh</a> | <a href="#" id="options">Options</a>
+				<a href="http://kortgebyr.dk">Kortgebyr.dk</a> 
+				<a href="http://github.com/" id="issues">Issues?</a> 
+				<a href="" id="refresh">Refresh</a>
+				<a href="#" id="options">Options</a>
 			</div>
 		</div>
 	</div>
