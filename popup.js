@@ -26,9 +26,6 @@ function openUrl(url, take_focus) {
   chrome.tabs.create({url: url, selected: take_focus});
 }
 
-function openLink(){
-	openUrl(this.href, true/*(localStorage['HN.BackgroundTabs'] == 'false')*/);
-}
 
 function UpdateFeed() {
  GET("http://www.amino.dk/forums/Toplister.aspx",
@@ -45,7 +42,6 @@ function UpdateFeed() {
 			row.appendChild(a);
 			a.innerHTML = e.innerHTML;
 			a.href = "http://www.amino.dk/forums/" + e.getAttribute('href', 2);
-			a.addEventListener("click", openLink);
 		}
 	}
 

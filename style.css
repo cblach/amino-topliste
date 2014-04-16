@@ -45,9 +45,9 @@ body, div, p {
 .box {	
 	min-height: 150px;
 	background: #FDFDFD url(ajax-loader.gif) no-repeat center center;
-	width:360px;
+	width:365px;
 	margin: 0 5px 0;
-	padding: 3px 0 3px;
+	padding: 3px 0 2px;
 	border: 1px solid #ccc;
 	border-top: 0;
 }
@@ -63,8 +63,8 @@ table tr {
 
 .footer {
 	color: #aaa;
-	font-size: 10px;
-	padding: 4px 5px 3px;
+	font-size: 9px;
+	padding: 3px 5px 3px;
 	-webkit-font-smoothing: subpixel-antialiased
 }
 
