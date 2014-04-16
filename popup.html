@@ -1,45 +1,36 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html>
 <head>
+	<meta charset="utf-8">
 	<script src="jquery.js"></script>
 	<script src="popup.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-	<div id="spinner" style="display:none">
-		<img src="ajax-loader.gif">
-	</div>
 	
-	<div id="container" class="popup-container">
+	<div class="header">
+
+		<img src="amino-48.png" />
+		<span>Toplisten på Amino</span>
+	
+		<select style="float:right; margin-top:4px; font-size:12px">
+			<option value="24h">sidste 24 timer</option>
+			<option value="7d">sidste uge</option>
+			<option value="1m">sidste måned</option>
+		</select>
+	</div>
 		
-		<div class="header">
-			<a href="http://amino.dk">
-				<img src="amino-48.png" />
-			</a>
-			<span>Toplisten på Amino</span>
-			<select style="float:right; font-size:12px; margin-top:4px">
-				<option value="24h">sidste 24 timer</option>
-				<option value="7d">sidste uge</option>
-				<option value="1m">sidste måned</option>
-			</select>
-		</div>
-		
-		<div id="search">
-			<input type="text" id="searchbox" name="searchbox" placeholder="Søg på amino..." />
-			<input type="submit" id="searchbutton" value="search" />
-		</div>
+	<div class="box">
 		
 		<table id="feed" cellspacing="3" cellpadding="0">
 		</table>
 		
-		<div id="footer">
-			<div class="right">
-				<a href="http://kortgebyr.dk">Kortgebyr.dk</a> 
-				<a href="http://github.com/" id="issues">Issues?</a> 
-				<a href="" id="refresh">Refresh</a>
-				<a href="#" id="options">Options</a>
-			</div>
+	</div>
+	
+	<div class="footer">
+		<div style="text-align:right">
+			<a href="#">opdater</a> | 
+			<a href="#">bugs</a> | 
+			<a href="http://kortgebyr.dk">kortgebyr</a>
 		</div>
 	</div>
 </body>

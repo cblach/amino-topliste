@@ -1,77 +1,69 @@
 body {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: verdana,helvetica, arial, sans-serif;
 	font-weight: 400;
 	font-size: 12px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 	overflow: hidden;
 }
 a {text-decoration:none; color:#000;}
 a:hover {text-decoration:underline;}
 
+:focus {outline:none;}
 
 body, div, p {
-
 	margin: 0;
 	padding: 0
-
 }
-
-
-#container {
-
-	background:#EBEBEB;
-	width:310px;
-	height: 320px;
-	margin: 5px;
-	border-radius: 2px
-}
-
 
 .header {
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	background: #035981;
 	color: #fff;
 	height: 27px;
-	border-top: 1px solid #858585;
 	font-size: 12px;
 	line-height: 27px;
-	text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
-	-webkit-font-smoothing: antialiased;
 	border-top-left-radius: 2px;
-	border-top-right-radius: 2px
+	border-top-right-radius: 2px;
+	margin: 5px 5px 0;
 }
+
 .header span {
 	font-weight: bold;
 	font-size: 12px;
-	-webkit-font-smoothing: antialiased;
 	line-height: 27px
 }
 
 .header img {
 	float: left;
 	width: 20px;
-	margin: 4px 8px 0 4px
+	margin: 4px 4px 0 4px
 }
 
 
-
-
-.table {
-
-	height: 150px
-
-
+.box {	
+	min-height: 150px;
+	background-color:#EBEBEB;
+	background: #EBEBEB url(ajax-loader.gif) no-repeat center center;
+	width:360px;
+	margin: 0 5px 0;
+	padding: 3px 0 4px;
+	border: 1px solid #ccc;
+	border-top: 0;
 }
 
+.footer {
+	color: #aaa;
+	font-size: 10px;
+	padding: 5px 5px 3px;
+	-webkit-font-smoothing: subpixel-antialiased
+}
 
+.footer a {
+	color: #666;
+}
 
+.footer .right a {
+	margin-left: 4px
+}
 
-
-
-
-#OptionsPage #header {margin-bottom:20px;}
-#OptionsPage #container {width:85%; margin:auto;}
-#OptionsPage label {margin-right:10px;}
-#OptionsPage .second-radio {margin-left:10px;}
-#OptionsPage p { color:#828282;}
-#OptionsPage a {text-decoration:underline;}
-#OptionsPage #feed {margin-left:10px;}
