@@ -47,17 +47,30 @@ body, div, p {
 	background: #FDFDFD url(ajax-loader.gif) no-repeat center center;
 	width:365px;
 	margin: 0 5px 0;
-	padding: 3px 0 2px;
+	padding: 0 0 2px;
 	border: 1px solid #ccc;
 	border-top: 0;
+}
+
+table {
+	
+	border-spacing: 0
+	
 }
 
 table tr {
 	background: #fdfdfd;
 	border-bottom: 1px solid #e4e4e4;
-	border-top: 1px solid #fafafa
+	border-top: 1px solid #fafafa;
+	height: 42px;
+	overflow: hidden
 	
 }
+
+table :nth-child(2n+2) {  
+  background: #ededed;
+}
+
 
 
 
