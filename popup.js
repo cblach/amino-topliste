@@ -86,10 +86,10 @@ function processAminoResponse(txt){
 			var a = document.createElement("a");
 			row.appendChild(a);
 			
-			var textExcerpt = e.text.substring(0,47);
+			var textExcerpt = e.text.substring(0,55);
 			
 			
-			if(e.text.length > 48){
+			if(e.text.length > 56){
 				textExcerpt += "...";
 			}
 			a.innerText = textExcerpt;
