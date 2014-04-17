@@ -45,30 +45,31 @@ body, div, p {
 .box {	
 	min-height: 150px;
 	background: #FDFDFD url(ajax-loader.gif) no-repeat center center;
-	width:365px;
 	margin: 0 5px 0;
-	padding: 0 0 2px;
 	border: 1px solid #ccc;
 	border-top: 0;
 }
 
 table {
 	
-	border-spacing: 0
+	width:365px;
 	
 }
 
 table tr {
-	background: #fdfdfd;
+	background: #fefefe;
 	border-bottom: 1px solid #e4e4e4;
 	border-top: 1px solid #fafafa;
-	height: 42px;
-	overflow: hidden
-	
+	overflow: hidden;	
+}
+
+table tr a {
+	display: block;
+	padding: 6px 8px
 }
 
 table :nth-child(2n+2) {  
-  background: #ededed;
+  background: #f7f7f7;
 }
 
 
