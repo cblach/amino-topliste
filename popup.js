@@ -88,10 +88,11 @@ function processAminoResponse(txt){
 			
 			var textExcerpt = e.text.substring(0,47);
 			
-			a.innerHTML = textExcerpt;
+			
 			if(e.text.length > 48){
-				a.innerHTML += "...";
+				textExcerpt += "...";
 			}
+			a.innerText = textExcerpt;
 			
 			a.href = "http://www.amino.dk/forums/" + e.getAttribute('href', 2);
 		}
