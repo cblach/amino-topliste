@@ -5,7 +5,7 @@
    "browser_action": {
 	   "default_icon": "amino-19.png",
 	   "default_popup": "popup.html",
-	   "default_title": "Amino"
+	   "default_title": "Amino Topliste"
    },
    
    "icons": { "48": "amino-48.png" },
