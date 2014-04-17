@@ -2,6 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<script src="jquery.js"></script>
+	<script src="poststrings.js"></script>
 	<script src="popup.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<base target="_blank" />
@@ -13,10 +14,10 @@
 		<img src="amino-48.png" />
 		<span>Toplisten på Amino</span>
 	
-		<select style="float:right; margin-top:4px; font-size:12px">
-			<option value="24h">sidste 24 timer</option>
-			<option value="7d">sidste uge</option>
-			<option value="1m">sidste måned</option>
+		<select id="timeRangeSelect" style="float:right; margin-top:4px; font-size:12px">
+			<option value="24h" data-timeselect="24_HOUR">sidste 24 timer</option>
+			<option value="7d" data-timeselect="WEEK">sidste uge</option>
+			<option value="1m" data-timeselect="MONTH">sidste måned</option>
 		</select>
 	</div>
 		

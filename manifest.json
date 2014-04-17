@@ -15,7 +15,7 @@
    
    "manifest_version": 2,
    "name": "Amino Newsfeed",
-   "permissions": [ "tabs", "http://www.amino.dk/*", "notifications" ],
+   "permissions": [ "tabs", "http://www.amino.dk/*", "notifications","storage" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "0.1"
 }

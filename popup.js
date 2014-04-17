@@ -1,3 +1,32 @@
+window.onload = function(){
+	var e = document.getElementById("timeRangeSelect");
+	
+	// Check if an timerange has previously been set:
+	chrome.storage.local.get('timeselect',function(result){
+		var savedOption = result.timeselect;
+		if(savedOption !== undefined){
+			for (var i=0; i<e.length; i++){
+				if(e.options[i].getAttribute('data-timeselect') === savedOption){
+					e.options[i].selected = true;
+				}
+			}
+				
+			UpdateFeed(savedOption);
+		}
+		else{
+			UpdateFeed("24_HOUR");
+		}
+	});
+	
+	// Detect changes in timerange preferences:
+	e.onchange = function(){
+		document.getElementById("feed").innerHTML = "";
+		var timeString = e.options[e.selectedIndex].getAttribute('data-timeselect');
+		chrome.storage.local.set({'timeselect': timeString});
+		UpdateFeed(timeString);
+	}
+}
+
 function GET(url, fn)
 {
 	var xmlhttp = new XMLHttpRequest();
@@ -14,6 +43,23 @@ function GET(url, fn)
 
 }
 
+function POST(url, fn, postdata)
+{
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.withCredentials = "true"; // Kun til testing
+	xmlhttp.onreadystatechange = function ()
+	{
+		if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+		{
+			fn(xmlhttp.responseText);
+		}
+	};
+	xmlhttp.open("POST", url, true);
+	xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xmlhttp.send(postdata);
+
+}
+
 function num2String2Dig(num) {
 	return ("0" + (num)).slice(-2);
 }
@@ -26,10 +72,9 @@ function openUrl(url, take_focus) {
   chrome.tabs.create({url: url, selected: take_focus});
 }
 
+// Takes the toplist response from amino and parses each thread title and link:
 
-function UpdateFeed() {
- GET("http://www.amino.dk/forums/Toplister.aspx",
- function(txt){
+function processAminoResponse(txt){
 	var parser=new DOMParser();
 	var htmlDoc=parser.parseFromString(txt, "text/html");
 	var feed = document.getElementById("feed");
@@ -45,9 +90,18 @@ function UpdateFeed() {
 		}
 	}
 
-
-//	alert(txtstr);
- });
 }
 
-UpdateFeed();
+
+function UpdateFeed(option) {
+	if(option === "24_HOUR"){
+		POST("http://www.amino.dk/forums/Toplister.aspx",processAminoResponse,POSTSTRING_24H);
+	}
+	else if(option === "WEEK"){
+		GET("http://www.amino.dk/forums/Toplister.aspx",processAminoResponse);
+	}
+	else if(option === "MONTH"){
+		POST("http://www.amino.dk/forums/Toplister.aspx",processAminoResponse,POSTSTRING_MONTH);
+	}
+}
+
