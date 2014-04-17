@@ -65,11 +65,17 @@ table tr {
 
 table tr a {
 	display: block;
-	padding: 6px 8px
+	padding: 5px 8px
 }
 
 table :nth-child(2n+2) {  
   background: #f7f7f7;
+}
+
+table tr:last-child {
+	
+	border-bottom: 0;
+	
 }
 
 
