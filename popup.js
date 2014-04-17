@@ -85,7 +85,14 @@ function processAminoResponse(txt){
 			var row = feed.insertRow(-1);
 			var a = document.createElement("a");
 			row.appendChild(a);
-			a.innerHTML = e.innerHTML;
+			
+			var textExcerpt = e.text.substring(0,47);
+			
+			a.innerHTML = textExcerpt;
+			if(e.text.length > 48){
+				a.innerHTML += "...";
+			}
+			
 			a.href = "http://www.amino.dk/forums/" + e.getAttribute('href', 2);
 		}
 	}
