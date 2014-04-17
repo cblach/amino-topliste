@@ -72,10 +72,12 @@ table :nth-child(2n+2) {
   background: #f7f7f7;
 }
 
+table tr:first-child a {
+	padding-top: 6px
+}
+
 table tr:last-child {
-	
 	border-bottom: 0;
-	
 }
 
 

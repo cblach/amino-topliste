@@ -86,13 +86,14 @@ function processAminoResponse(txt){
 			var a = document.createElement("a");
 			row.appendChild(a);
 			
-			var textExcerpt = e.text.substring(0,55);
+			var textExcerpt = e.text.substring(0,52);
 			
 			
-			if(e.text.length > 56){
+			if(e.text.length > 53){
 				textExcerpt += "...";
 			}
 			a.innerText = textExcerpt;
+			a.title = e.text;
 			
 			a.href = "http://www.amino.dk/forums/" + e.getAttribute('href', 2);
 		}
