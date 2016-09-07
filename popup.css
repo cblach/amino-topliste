@@ -8,7 +8,7 @@ body {
     font-family: verdana,helvetica, arial, sans-serif;
     font-weight: 400;
     font-size: 12px;
-    width: 350px;
+    width: 32.3em;
     margin: 5px;
 }
 
@@ -82,7 +82,7 @@ header span {
 
 #feed a {
     display: block;
-    padding: 5px 8px
+    padding: 5px 0 5px 8px
 }
 
 footer {
@@ -94,4 +94,3 @@ footer {
 
 .authors { flex: 1; }
 .sep { margin: 0 5px; }
-
