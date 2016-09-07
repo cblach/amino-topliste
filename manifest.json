@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Amino Topliste",
-    "description": "Få et hurtigt overblik over de mest aktive emner fra amino.dk",
+    "description": "Få et hurtigt overblik over de mest aktive emner på amino.dk",
     "version": "0.12",
     "icons": {
         "48": "icon48.png",
@@ -16,7 +16,6 @@
         "default_popup": "popup.html"
     },
     "permissions": ["http://www.amino.dk/"],
-    "optional_permissions": ["tabs"],
     "content_security_policy": "default-src 'none'; connect-src http://www.amino.dk/",
     "update_url": "https://clients2.google.com/service/update2/crx"
 }
