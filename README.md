@@ -4,9 +4,9 @@ Amino Topliste er en Chrome Extension (udvidelse), som viser de mest aktive trå
 
 ![Amino topliste](screenshot.png?raw=true "Amino topliste screenshot")
 
-#### Install:
+### Install:
 
 Du kan installere Amino topliste via [Chrome Web Store](https://chrome.google.com/webstore/detail/amino-topliste/goodeiddahdeknaodlidligcnlpcbplb?hl=da).
 
-#### License
+### License
 Koden er udgivet under [CC-BY-SA 4.0](LICENSE).
