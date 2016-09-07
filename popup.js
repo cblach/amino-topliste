@@ -3,7 +3,7 @@
 *   @license CC-BY-SA 4.0
 **/
 
-const maxFeedLength = 20;
+const maxFeedLength = 19;
 const maxTitleLength = 56; // characters
 
 window.onload = function () {
@@ -59,4 +59,3 @@ function updateFeed(evt) {
     AJAX('http://www.amino.dk/forums/Toplister.aspx', payload);
     document.getElementById('feed').innerHTML = '';
 }
-
