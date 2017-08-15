@@ -1,6 +1,5 @@
 /**
 *   @author Christian Blach, Ulrik Moe
-*   @license CC-BY-SA 4.0
 **/
 
 const BASE_STRING = '__EVENTTARGET=ctl00%24ctl00%24bcr%24bcr%24DateFilter&ctl00%24ctl00%24newAminoMenu%24MenuGenerator1%24ctl01%24ForumSearch%24SearchTextBox=&ctl00%24ctl00%24newAminoMenu%24MenuGenerator1%24ctl01%24ForumSearch%24ddlSearchOptions=0&ctl00%24ctl00%24bcr%24bcr%24ListFilter=0&ctl00%24ctl00%24bcr%24bcr%24ForumFilter=-1';

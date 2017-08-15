@@ -1,6 +1,5 @@
 /**
 *   @author Christian Blach, Ulrik Moe
-*   @license CC-BY-SA 4.0
 **/
 
 const maxFeedLength = 19;
@@ -56,6 +55,6 @@ function buildFeed() {
 function updateFeed(evt) {
     const time = (evt) ? evt.target.value : 'day';
     const payload = postObj[time];
-    AJAX('http://www.amino.dk/forums/Toplister.aspx', payload);
+    AJAX('https://www.amino.dk/forums/Toplister.aspx', payload);
     document.getElementById('feed').innerHTML = '';
 }
