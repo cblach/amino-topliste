@@ -40,8 +40,8 @@ function buildFeed() {
         let text = e.text.substring(0, maxTitleLength);
         if (e.text.length > 53) { text += '...'; }
 
-        let li = document.createElement('li');
-        let a = document.createElement('a');
+        const li = document.createElement('li');
+        const a = document.createElement('a');
         a.href = e.href;
         a.textContent = text;
         a.title = e.text;
